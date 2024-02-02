@@ -1,4 +1,4 @@
-#Ex1
+#Ex1 2
 def my_function():
 #Ex2
 my_function()
