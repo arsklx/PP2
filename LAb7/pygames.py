@@ -13,14 +13,14 @@ while not done:
     for event in pygame.event.get():   
         if event.type == pygame.QUIT:
             done = True
-    if key[pygame.K_UP]: y -= 10
-    elif key[pygame.K_DOWN]: y += 10
-    elif key[pygame.K_RIGHT]: x += 10
-    elif key[pygame.K_LEFT]: x -= 10
-    if x > 775: x -= 10
-    elif x < 25: x += 10
-    if y > 575: y -= 10
-    elif y < 25: y += 10
+    if key[pygame.K_UP]: y -= 20
+    elif key[pygame.K_DOWN]: y += 20
+    elif key[pygame.K_RIGHT]: x += 20
+    elif key[pygame.K_LEFT]: x -= 20
+    if x > 775: x -= 20
+    elif x < 25: x += 20
+    if y > 575: y -= 20
+    elif y < 25: y += 20
     pygame.draw.circle(screen, "RED", (x, y), 25)
     pygame.display.flip()
     clock.tick(60)
